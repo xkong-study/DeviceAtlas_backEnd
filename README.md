@@ -50,10 +50,10 @@ Application runs on <http://localhost:8080>.
 
 ## **API Documentation (Swagger)**
 
-Two Api: 
-# Device API Documentation
+**Two Api:**
 
-## **1. Fetch Devices**
+**1. Fetch Devices**
+
 **Endpoint:**  
 
 `POST /api/fetch-devices`  
@@ -68,7 +68,7 @@ https://region0.deviceatlascloud.com/v1/detect/properties?licencekey=e6ce0b9455c
     "message": "Devices fetched and stored successfully"
 }
 
-## **2. Get Tablets**
+**2. Get Tablets**
 **Endpoint:**  
 
 `GET /api/tablets`
