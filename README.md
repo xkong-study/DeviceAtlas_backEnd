@@ -2,7 +2,7 @@
 
 ## **Overview**
 
-DeviceAtlas Backend is a Spring Boot application designed to process User-Agent strings and store device information. It utilizes local caching, Docker for containerization, and Swagger for API documentation.
+DeviceAtlas Backend is a Spring Boot application designed to process User-Agent strings and store device information. It utilizes local caching, postgres to store filtered data .Docker for containerization, and Swagger for API documentation.
 
 ## **Features**
 
