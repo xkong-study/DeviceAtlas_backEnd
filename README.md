@@ -50,6 +50,55 @@ Application runs on <http://localhost:8080>.
 
 ## **API Documentation (Swagger)**
 
+Two Api: 
+# Device API Documentation
+
+## **1. Fetch Devices**
+**Endpoint:**  
+
+`POST /api/fetch-devices`  
+
+**Request Body:**  
+```text
+https://region0.deviceatlascloud.com/v1/detect/properties?licencekey=e6ce0b9455cab0e494be4587d016c7c2&useragent=USER_AGENT
+```
+**Reponse:**  
+
+{
+    "message": "Devices fetched and stored successfully"
+}
+
+## **2. Get Tablets**
+**Endpoint:**  
+
+`GET /api/tablets`
+
+**Reponse:**  
+```
+response{
+[
+    {
+        "id": 8,
+        "model": "Pixel C",
+        "osVersion": "6.0",
+        "vendor": "Google",
+        "browserName": "Chrome",
+        "osName": "Android",
+        "primaryHardwareType": "Tablet",
+        "browserRenderingEngine": "Blink"
+    },
+    {
+        "id": 9,
+        "model": "Kindle Fire HDX 7",
+        "osVersion": "4.2.2",
+        "vendor": "Amazon",
+        "browserName": "Amazon Silk",
+        "osName": "Android",
+        "primaryHardwareType": "Tablet",
+        "browserRenderingEngine": "WebKit"
+    }
+]
+```
 Swagger UI is available at:
 
 <http://localhost:8080/swagger-ui/index.html#/user-agent-controller/fetchDevices>.
