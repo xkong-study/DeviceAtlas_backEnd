@@ -6,14 +6,14 @@ DeviceAtlas Backend is a Spring Boot application designed to process User-Agent 
 
 ## **Features**
 
-**User-Agent Processing**: Parses and stores device information.
-**Local Caching**: Reduces redundant API calls and improves performance.
-**Concurrency Control**: Uses locking mechanisms to prevent race conditions.
-**Duplicate Detection**: Ensures that only unique device data is stored.
-**Data Filtering**: Filters out non-tablets User-Agent.
-**Swagger API Documentation**: Provides an interactive UI for testing endpoints.
-**Docker Support**: Easily containerize and deploy the application.
-**Test Coverage**: Ensures high code reliability through unit tests.
+**User-Agent Processing**: Parses and stores device information.       
+**Local Caching**: Reduces redundant API calls and improves performance.       
+**Concurrency Control**: Uses locking mechanisms to prevent race conditions.        
+**Duplicate Detection**: Ensures that only unique device data is stored.      
+**Data Filtering**: Filters out non-tablets User-Agent.           
+**Swagger API Documentation**: Provides an interactive UI for testing endpoints.             
+**Docker Support**: Easily containerize and deploy the application.        
+**Test Coverage**: Ensures high code reliability through unit tests.     
 
 ## **Getting Started**
 
