@@ -24,6 +24,7 @@ Ensure you have the following installed:
 - Java 17+
 - Gradle 8+
 - Docker (optional for containerization)
+- postgres:14 (username:postgres, password:deviceAtlas)
 
 ### **Clone the Repository**
 
@@ -33,6 +34,13 @@ https://github.com/xkong-study/DeviceAtlas_backEnd.git
 
 ### **Run Locally**
 
+open postgres    
+```
+sudo systemctl start postgresql  # Linux
+brew services start postgresql   # macOS
+
+```
+run springboot   
 ```
 ./gradlew build
 ./gradlew run
