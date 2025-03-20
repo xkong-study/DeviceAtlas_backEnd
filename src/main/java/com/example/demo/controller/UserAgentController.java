@@ -5,7 +5,9 @@ import com.example.demo.service.DeviceAtlasService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api")
@@ -31,4 +33,12 @@ public class UserAgentController {
         userAgents.forEach(deviceAtlasService::fetchAndStoreDeviceInfo);
         return ResponseEntity.ok("Devices fetched and stored successfully");
     }
+
+    @ExceptionHandler(Exception.class)
+    public ResponseEntity<Map<String, String>> handleException(Exception e) {
+        Map<String, String> errorResponse = new HashMap<>();
+        errorResponse.put("error", e.getMessage());
+        return ResponseEntity.internalServerError().body(errorResponse);
+    }
+
 }
